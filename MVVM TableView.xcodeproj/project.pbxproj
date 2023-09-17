@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD1076AE2AB749A300A875D2 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1076AD2AB749A300A875D2 /* Observable.swift */; };
 		FD9E5F6F2AB73748001A9F65 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9E5F6E2AB73748001A9F65 /* EndPoint.swift */; };
 		FD9E5F712AB73A25001A9F65 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9E5F702AB73A25001A9F65 /* Users.swift */; };
 		FD9E5F742AB73C68001A9F65 /* URLSession + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9E5F732AB73C68001A9F65 /* URLSession + Extension.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FD1076AD2AB749A300A875D2 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		FD9E5F6E2AB73748001A9F65 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
 		FD9E5F702AB73A25001A9F65 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		FD9E5F732AB73C68001A9F65 /* URLSession + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession + Extension.swift"; sourceTree = "<group>"; };
@@ -51,6 +53,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FD1076AC2AB7498600A875D2 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FD1076AD2AB749A300A875D2 /* Observable.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		FD9E5F6D2AB7370E001A9F65 /* NetworkManager */ = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +104,7 @@
 				FDC4CC122AB7253800A1D94E /* Views */,
 				FDC4CC132AB7254000A1D94E /* ViewModels */,
 				FD9E5F6D2AB7370E001A9F65 /* NetworkManager */,
+				FD1076AC2AB7498600A875D2 /* Helpers */,
 				FD9E5F722AB73C2C001A9F65 /* Extensions */,
 				FDC4CC152AB7256500A1D94E /* Supporting Files */,
 			);
@@ -218,6 +229,7 @@
 				FDC4CC1B2AB72D5400A1D94E /* MainViewModel.swift in Sources */,
 				FDC4CC022AB7207F00A1D94E /* MainViewController.swift in Sources */,
 				FDC4CC192AB72BDA00A1D94E /* MainViewController + TableView.swift in Sources */,
+				FD1076AE2AB749A300A875D2 /* Observable.swift in Sources */,
 				FD9E5F782AB73E75001A9F65 /* NetworkRequest.swift in Sources */,
 				FDC4CBFE2AB7207F00A1D94E /* AppDelegate.swift in Sources */,
 				FDC4CC002AB7207F00A1D94E /* SceneDelegate.swift in Sources */,

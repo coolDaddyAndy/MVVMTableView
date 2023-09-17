@@ -15,6 +15,8 @@ class MainViewController: UIViewController {
         return tableView
     }()
     
+    let activityIndicator = UIActivityIndicatorView()
+    
     var viewModel = MainViewModel()
     
     override func viewDidLoad() {
@@ -31,6 +33,9 @@ class MainViewController: UIViewController {
         
         view.addSubview(tableView)
         setupTableView()
+        
+        activityIndicator.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(activityIndicator)
     }
 }
 
@@ -42,7 +47,10 @@ extension MainViewController {
             tableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+            tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            
+            activityIndicator.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            activityIndicator.centerYAnchor.constraint(equalTo: view.centerYAnchor)
         ])
     }
 }
