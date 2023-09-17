@@ -19,7 +19,7 @@ final class MainViewController: UIViewController {
     
     var viewModel = MainViewModel()
     
-    var cellDataSource = [Users]()
+    var cellDataSource = [MainCellViewModel]()
     
     override func viewDidLoad() {
         super.viewDidLoad()

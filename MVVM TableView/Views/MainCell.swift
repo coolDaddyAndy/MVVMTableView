@@ -10,6 +10,10 @@ import UIKit
 
 final class MainCell: UITableViewCell {
     
+    static var identifier: String {
+        "MainCell"
+    }
+    
     private let nameLabel = UILabel()
     private let emailLabel = UILabel()
     
@@ -41,5 +45,10 @@ final class MainCell: UITableViewCell {
             labelsStackView.centerYAnchor.constraint(equalTo: centerYAnchor),
             labelsStackView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20)
         ])
+    }
+    
+    func setupCell(viewModel: MainCellViewModel) {
+        nameLabel.text = viewModel.name
+        emailLabel.text = viewModel.email
     }
 }
