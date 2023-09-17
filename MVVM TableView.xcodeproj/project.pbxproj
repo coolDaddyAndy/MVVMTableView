@@ -9,19 +9,21 @@
 /* Begin PBXBuildFile section */
 		FDC4CBFE2AB7207F00A1D94E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC4CBFD2AB7207F00A1D94E /* AppDelegate.swift */; };
 		FDC4CC002AB7207F00A1D94E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC4CBFF2AB7207F00A1D94E /* SceneDelegate.swift */; };
-		FDC4CC022AB7207F00A1D94E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC4CC012AB7207F00A1D94E /* ViewController.swift */; };
+		FDC4CC022AB7207F00A1D94E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC4CC012AB7207F00A1D94E /* MainViewController.swift */; };
 		FDC4CC072AB7208200A1D94E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDC4CC062AB7208200A1D94E /* Assets.xcassets */; };
 		FDC4CC0A2AB7208200A1D94E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDC4CC082AB7208200A1D94E /* LaunchScreen.storyboard */; };
+		FDC4CC192AB72BDA00A1D94E /* MainViewController + TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC4CC182AB72BDA00A1D94E /* MainViewController + TableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FDC4CBFA2AB7207F00A1D94E /* MVVM TableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM TableView.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDC4CBFD2AB7207F00A1D94E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDC4CBFF2AB7207F00A1D94E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FDC4CC012AB7207F00A1D94E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FDC4CC012AB7207F00A1D94E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		FDC4CC062AB7208200A1D94E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDC4CC092AB7208200A1D94E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FDC4CC0B2AB7208200A1D94E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDC4CC182AB72BDA00A1D94E /* MainViewController + TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController + TableView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,6 @@
 				FDC4CC142AB7254900A1D94E /* Models */,
 				FDC4CC122AB7253800A1D94E /* Views */,
 				FDC4CC132AB7254000A1D94E /* ViewModels */,
-				FDC4CC012AB7207F00A1D94E /* ViewController.swift */,
 				FDC4CC152AB7256500A1D94E /* Supporting Files */,
 			);
 			path = "MVVM TableView";
@@ -76,6 +77,8 @@
 		FDC4CC122AB7253800A1D94E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FDC4CC012AB7207F00A1D94E /* MainViewController.swift */,
+				FDC4CC182AB72BDA00A1D94E /* MainViewController + TableView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -174,7 +177,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDC4CC022AB7207F00A1D94E /* ViewController.swift in Sources */,
+				FDC4CC022AB7207F00A1D94E /* MainViewController.swift in Sources */,
+				FDC4CC192AB72BDA00A1D94E /* MainViewController + TableView.swift in Sources */,
 				FDC4CBFE2AB7207F00A1D94E /* AppDelegate.swift in Sources */,
 				FDC4CC002AB7207F00A1D94E /* SceneDelegate.swift in Sources */,
 			);
