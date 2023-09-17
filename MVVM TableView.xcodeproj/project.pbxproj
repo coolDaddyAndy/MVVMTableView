@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		FD9E5F6F2AB73748001A9F65 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9E5F6E2AB73748001A9F65 /* EndPoint.swift */; };
 		FD9E5F712AB73A25001A9F65 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9E5F702AB73A25001A9F65 /* Users.swift */; };
+		FD9E5F742AB73C68001A9F65 /* URLSession + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9E5F732AB73C68001A9F65 /* URLSession + Extension.swift */; };
+		FD9E5F762AB73E15001A9F65 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9E5F752AB73E15001A9F65 /* NetworkError.swift */; };
+		FD9E5F782AB73E75001A9F65 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9E5F772AB73E75001A9F65 /* NetworkRequest.swift */; };
+		FD9E5F7A2AB7401B001A9F65 /* NetworkDataFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9E5F792AB7401B001A9F65 /* NetworkDataFetch.swift */; };
 		FDC4CBFE2AB7207F00A1D94E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC4CBFD2AB7207F00A1D94E /* AppDelegate.swift */; };
 		FDC4CC002AB7207F00A1D94E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC4CBFF2AB7207F00A1D94E /* SceneDelegate.swift */; };
 		FDC4CC022AB7207F00A1D94E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC4CC012AB7207F00A1D94E /* MainViewController.swift */; };
@@ -21,6 +25,10 @@
 /* Begin PBXFileReference section */
 		FD9E5F6E2AB73748001A9F65 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
 		FD9E5F702AB73A25001A9F65 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		FD9E5F732AB73C68001A9F65 /* URLSession + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession + Extension.swift"; sourceTree = "<group>"; };
+		FD9E5F752AB73E15001A9F65 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		FD9E5F772AB73E75001A9F65 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		FD9E5F792AB7401B001A9F65 /* NetworkDataFetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetch.swift; sourceTree = "<group>"; };
 		FDC4CBFA2AB7207F00A1D94E /* MVVM TableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM TableView.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDC4CBFD2AB7207F00A1D94E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDC4CBFF2AB7207F00A1D94E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,8 +55,19 @@
 			isa = PBXGroup;
 			children = (
 				FD9E5F6E2AB73748001A9F65 /* EndPoint.swift */,
+				FD9E5F752AB73E15001A9F65 /* NetworkError.swift */,
+				FD9E5F772AB73E75001A9F65 /* NetworkRequest.swift */,
+				FD9E5F792AB7401B001A9F65 /* NetworkDataFetch.swift */,
 			);
 			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		FD9E5F722AB73C2C001A9F65 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FD9E5F732AB73C68001A9F65 /* URLSession + Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		FDC4CBF12AB7207F00A1D94E = {
@@ -75,6 +94,7 @@
 				FDC4CC122AB7253800A1D94E /* Views */,
 				FDC4CC132AB7254000A1D94E /* ViewModels */,
 				FD9E5F6D2AB7370E001A9F65 /* NetworkManager */,
+				FD9E5F722AB73C2C001A9F65 /* Extensions */,
 				FDC4CC152AB7256500A1D94E /* Supporting Files */,
 			);
 			path = "MVVM TableView";
@@ -198,8 +218,12 @@
 				FDC4CC1B2AB72D5400A1D94E /* MainViewModel.swift in Sources */,
 				FDC4CC022AB7207F00A1D94E /* MainViewController.swift in Sources */,
 				FDC4CC192AB72BDA00A1D94E /* MainViewController + TableView.swift in Sources */,
+				FD9E5F782AB73E75001A9F65 /* NetworkRequest.swift in Sources */,
 				FDC4CBFE2AB7207F00A1D94E /* AppDelegate.swift in Sources */,
 				FDC4CC002AB7207F00A1D94E /* SceneDelegate.swift in Sources */,
+				FD9E5F7A2AB7401B001A9F65 /* NetworkDataFetch.swift in Sources */,
+				FD9E5F762AB73E15001A9F65 /* NetworkError.swift in Sources */,
+				FD9E5F742AB73C68001A9F65 /* URLSession + Extension.swift in Sources */,
 				FD9E5F712AB73A25001A9F65 /* Users.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
