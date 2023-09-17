@@ -19,11 +19,18 @@ class MainViewController: UIViewController {
     
     var viewModel = MainViewModel()
     
+    var cellDataSource = [Users]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setupViews()
         setConstraints()
+        bindViewModel()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         viewModel.getUsers()
     }
     
@@ -36,6 +43,25 @@ class MainViewController: UIViewController {
         
         activityIndicator.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(activityIndicator)
+    }
+    
+    private func bindViewModel() {
+        viewModel.isLoading.bind { [weak self] isLoading in
+            guard let self, let isLoading else {
+                return
+            }
+            DispatchQueue.main.async {
+                isLoading ? self.activityIndicator.startAnimating() : self.activityIndicator.stopAnimating()
+            }
+        }
+        
+        viewModel.cellDataSource.bind { [weak self] users in
+            guard let self, let users else {
+                return
+            }
+            cellDataSource = users
+            reloadTableView()
+        }
     }
 }
 

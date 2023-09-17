@@ -10,6 +10,7 @@ import Foundation
 class MainViewModel {
     
     var isLoading: Observable<Bool> = Observable(value: false)
+    var cellDataSource: Observable<[Users]> = Observable(value: nil)
     var dataSourse: [Users]?
     
     func numberOfSection() -> Int {
@@ -17,7 +18,7 @@ class MainViewModel {
     }
     
     func numberOfRows(_ section: Int) -> Int {
-        10
+        dataSourse?.count ?? 0
     }
     
     func getUsers() {
@@ -30,7 +31,12 @@ class MainViewModel {
             self.isLoading.value = false
             if let users {
                 self.dataSourse = users
+                mapCellData()
             }
         }
+    }
+    
+    func mapCellData() {
+        cellDataSource.value = dataSourse
     }
 }
