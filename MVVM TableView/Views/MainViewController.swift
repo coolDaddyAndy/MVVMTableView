@@ -25,6 +25,7 @@ class MainViewController: UIViewController {
     }
     
     private func setupViews() {
+        view.backgroundColor = .white
         title = "Main screen"
         
         view.addSubview(tableView)
