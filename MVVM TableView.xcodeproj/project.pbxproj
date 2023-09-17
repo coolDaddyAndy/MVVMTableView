@@ -13,6 +13,7 @@
 		FDC4CC072AB7208200A1D94E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDC4CC062AB7208200A1D94E /* Assets.xcassets */; };
 		FDC4CC0A2AB7208200A1D94E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDC4CC082AB7208200A1D94E /* LaunchScreen.storyboard */; };
 		FDC4CC192AB72BDA00A1D94E /* MainViewController + TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC4CC182AB72BDA00A1D94E /* MainViewController + TableView.swift */; };
+		FDC4CC1B2AB72D5400A1D94E /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC4CC1A2AB72D5400A1D94E /* MainViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		FDC4CC092AB7208200A1D94E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FDC4CC0B2AB7208200A1D94E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FDC4CC182AB72BDA00A1D94E /* MainViewController + TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController + TableView.swift"; sourceTree = "<group>"; };
+		FDC4CC1A2AB72D5400A1D94E /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 		FDC4CC132AB7254000A1D94E /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				FDC4CC1A2AB72D5400A1D94E /* MainViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDC4CC1B2AB72D5400A1D94E /* MainViewModel.swift in Sources */,
 				FDC4CC022AB7207F00A1D94E /* MainViewController.swift in Sources */,
 				FDC4CC192AB72BDA00A1D94E /* MainViewController + TableView.swift in Sources */,
 				FDC4CBFE2AB7207F00A1D94E /* AppDelegate.swift in Sources */,

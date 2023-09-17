@@ -15,6 +15,8 @@ class MainViewController: UIViewController {
         return tableView
     }()
     
+    var viewModel = MainViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -23,7 +25,6 @@ class MainViewController: UIViewController {
     }
     
     private func setupViews() {
-        view.backgroundColor = .gray
         title = "Main screen"
         
         view.addSubview(tableView)
