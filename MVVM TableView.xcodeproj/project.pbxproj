@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FD1076AE2AB749A300A875D2 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1076AD2AB749A300A875D2 /* Observable.swift */; };
+		FD1076B02AB7560B00A875D2 /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1076AF2AB7560B00A875D2 /* MainCell.swift */; };
 		FD9E5F6F2AB73748001A9F65 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9E5F6E2AB73748001A9F65 /* EndPoint.swift */; };
 		FD9E5F712AB73A25001A9F65 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9E5F702AB73A25001A9F65 /* Users.swift */; };
 		FD9E5F742AB73C68001A9F65 /* URLSession + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9E5F732AB73C68001A9F65 /* URLSession + Extension.swift */; };
@@ -25,6 +26,7 @@
 
 /* Begin PBXFileReference section */
 		FD1076AD2AB749A300A875D2 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		FD1076AF2AB7560B00A875D2 /* MainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
 		FD9E5F6E2AB73748001A9F65 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
 		FD9E5F702AB73A25001A9F65 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		FD9E5F732AB73C68001A9F65 /* URLSession + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession + Extension.swift"; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 			children = (
 				FDC4CC012AB7207F00A1D94E /* MainViewController.swift */,
 				FDC4CC182AB72BDA00A1D94E /* MainViewController + TableView.swift */,
+				FD1076AF2AB7560B00A875D2 /* MainCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 				FDC4CC022AB7207F00A1D94E /* MainViewController.swift in Sources */,
 				FDC4CC192AB72BDA00A1D94E /* MainViewController + TableView.swift in Sources */,
 				FD1076AE2AB749A300A875D2 /* Observable.swift in Sources */,
+				FD1076B02AB7560B00A875D2 /* MainCell.swift in Sources */,
 				FD9E5F782AB73E75001A9F65 /* NetworkRequest.swift in Sources */,
 				FDC4CBFE2AB7207F00A1D94E /* AppDelegate.swift in Sources */,
 				FDC4CC002AB7207F00A1D94E /* SceneDelegate.swift in Sources */,
