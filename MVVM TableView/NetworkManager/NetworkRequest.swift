@@ -16,15 +16,13 @@ final class NetworkRequest {
     
     func getData(complitionHandler: @escaping (Result<Data, NetworkError>) -> Void) {
         URLSession.shared.request(EndPoint.users) { data, _, error in
-            DispatchQueue.main.async {
-                if error != nil {
-                    complitionHandler(.failure(.urlError))
-                } else {
-                    guard let data else {
-                        return
-                    }
-                    complitionHandler(.success(data))
+            if error != nil {
+                complitionHandler(.failure(.urlError))
+            } else {
+                guard let data else {
+                    return
                 }
+                complitionHandler(.success(data))
             }
         }
     }

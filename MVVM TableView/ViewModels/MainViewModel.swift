@@ -11,7 +11,7 @@ final class MainViewModel {
     
     var isLoading: Observable<Bool> = Observable(value: false)
     var cellDataSource: Observable<[MainCellViewModel]> = Observable(value: nil)
-    var dataSourse: [Users]?
+    var dataSourse: [User]?
     
     func numberOfSection() -> Int {
         1
